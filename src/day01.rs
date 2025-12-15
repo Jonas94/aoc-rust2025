@@ -31,8 +31,6 @@ pub fn part1(input: &str) -> i32 {
 
     for line in input.lines() {
         if let Some((letter, number)) = split_code(line) {
-            println!("line: {}, {}", letter, number);
-
             if letter == 'L' {
                 for _ in 0..(number as usize) {
                     let prev_node = {
